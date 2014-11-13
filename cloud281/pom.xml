@@ -18,6 +18,11 @@
 
 
   <dependencies>
+  	<dependency>
+		<groupId>org.eclipse.jetty</groupId>
+		<artifactId>jetty-server</artifactId>
+		<version>9.2.4.v20141103</version>
+	</dependency>	
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
