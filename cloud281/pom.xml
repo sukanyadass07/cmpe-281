@@ -15,9 +15,25 @@
 <!--     <maven.compiler.source>2.5.1</maven.compiler.source>
   	<maven.compiler.target>2.5.1</maven.compiler.target> -->
    </properties>
-
-
+   
+    <repositories>
+ 	<repository>
+ 		<id>Spark repository</id>
+ 		<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+	</repository>
+	<repository>
+		<id>scala-tool-releases</id>
+		<name>Scala Tools Releases</name>
+		<url>https://repository.jboss.org/nexus/content/repositories/scala-tools-releases</url>
+	</repository>
+ 	</repositories>
+   
   <dependencies>
+  		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.20</version>
+    	</dependency>
   	<dependency>
 		<groupId>org.eclipse.jetty</groupId>
 		<artifactId>jetty-server</artifactId>
@@ -74,6 +90,11 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.3</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.apache.poi</groupId>
+    		<artifactId>poi</artifactId>
+    		<version>3.9</version>
 		</dependency>
   	</dependencies>
 
@@ -190,7 +211,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>		
+			</plugin>	
         </plugins>
     </build>
 </project>
