@@ -29,20 +29,25 @@
    
   <dependencies>
   		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-		</dependency>  		
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-servlet</artifactId>
+			<version>9.3.0.M1</version>
+		</dependency>
+		<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-server</artifactId>
+				<version>9.3.0.M1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-io</artifactId>
+			<version>9.3.0.M1</version>
+		</dependency>		 		
   		<dependency>
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
 			<version>2.3.20</version>
     	</dependency>
-  	<dependency>
-		<groupId>org.eclipse.jetty</groupId>
-		<artifactId>jetty-server</artifactId>
-		<version>9.0.2.v20130417</version>
-	</dependency>	
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -98,8 +103,8 @@
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-util</artifactId>
-			<version>9.2.2.v20140723</version>
-		</dependency>		
+			<version>9.3.0.M1</version>
+		</dependency>
   	</dependencies>
 
     <build>
